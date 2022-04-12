@@ -10,7 +10,7 @@ import numpy as np
 import statistics as st
 class Transformacje:
     def __init__(self, model: str = "wgs84"):
-        #https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84
+        
         if model == "wgs84":
             self.a = 6378137.0 # semimajor_axis
             self.b = 6356752.31424518 # semiminor_axis
@@ -153,7 +153,6 @@ class Transformacje:
         '''
         Układ współrzędnych 1992 (Państwowy Układ Współrzędnych Geodezyjnych 1992) – układ współrzędnych 
         płaskich prostokątnych oparty na odwzorowaniu Gaussa-Krügera dla elipsoidy GRS80 w jednej dziesięciostopniowej strefie. 
-        Początkiem układu jest punkt przecięcia południka 19°E z obrazem równika.
 
         '''
         e_2 = self.ecc2/(1-self.ecc2)
